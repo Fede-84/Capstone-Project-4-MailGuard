@@ -1,0 +1,131 @@
+/* Reset Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0b0f1a;
+  color: #e6edf3;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  color: #00e5ff;
+  letter-spacing: 1px;
+}
+
+input[type="email"] {
+  width: 320px;
+  max-width: 90vw;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #2a3347;
+  background-color: #0f1625;
+  color: #e6edf3;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00e5ff;
+  color: #0b0f1a;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00c8e0;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.result-card {
+  width: 420px;
+  max-width: 90vw;
+  padding: 20px;
+  background-color: #0f1625;
+  border-radius: 10px;
+  border: 1px solid #2a3347;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+  text-align: left;
+}
+
+.result-card p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  margin: 8px 0;
+  background-color: #0b0f1a;
+  border: 1px solid #1f2a3a;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #c9d1d9;
+}
+
+.result-card p:last-child {
+  border: 1px solid #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.15);
+  color: #00e5ff;
+  font-weight: 500;
+}
+
+.result-card a:link,
+.result-card a:visited,
+.result-card a:hover,
+.result-card a:active {
+  color: #00e5ff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 15px;
+  transition: opacity 0.2s ease;
+}
+
+.result-card a:hover {
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+
+  font-size: 12px;
+  color: #8b949e;
+  opacity: 0.7;
+}

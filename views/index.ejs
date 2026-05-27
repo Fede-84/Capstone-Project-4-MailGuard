@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+    <h1>MailGuard Checker</h1>
+
+    <form action="/check" method="POST" class="email-form">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Enter email address" required />
+        <button type="submit">Check</button>
+    </form>
+
+    <%- include("partials/footer.ejs") %>

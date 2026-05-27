@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+    <h1>MailGuard Email Result</h1>
+
+    <div class="result-card">
+        <p>Email Address: <%= data.email %>
+        </p>
+        <% if (data.suggestion) { %>
+            <p>Did you mean...?: <%= data.suggestion %>
+            </p>
+            <% } %>
+                <p>Valid Format: <%= data.formatValid ? "Yes" : "No" %>
+                </p>
+                <p>Mailbox Exists: <%= data.smtpCheck ? "Yes" : "No" %>
+                </p>
+                <p>Quality Score: <%= data.score %>
+                </p>
+                <p>Email Quality: <%= data.qualityLabel %>
+                </p>
+    </div>
+
+    <a href="/">Check another email</a>
+
+    <%- include("partials/footer.ejs") %>
